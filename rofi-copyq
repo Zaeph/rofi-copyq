@@ -39,3 +39,4 @@ if __name__ == '__main__':
         num = p.stdout.strip()
         sp.run(f'copyq select({num});'.split(),
                encoding='utf-8', capture_output=True)
+        sp.run(f'copyq paste({num});'.split(), encoding='utf-8', capture_output=True)
